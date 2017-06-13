@@ -1,0 +1,5 @@
+html, body, #root {
+    height: 100%;
+    font-size: 12px;
+    overflow-y: hidden;
+}

@@ -1,0 +1,60 @@
+:global {
+    .common_mobile_show_content {
+        overflow: auto;
+        position: absolute;
+        top: 150px;
+        left: 25px;
+        width: 326px;
+        height: 525px;
+        background-color: #F1F1F1;
+    }
+
+    /*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+    .common_mobile_show_content::-webkit-scrollbar {
+        background-color: transparent!important;
+        border-radius: 5px;
+        width: 8px;
+        height: 8px;
+        margin-right: 5px;
+        right: 5px;
+    }
+
+    .common_mobile_show_content::-webkit-scrollbar-corner {
+        background-color: rgba(237, 240, 245, 0.4);
+    }
+
+    /*定义滑块，内阴影及圆角*/
+    .common_mobile_show_content::-webkit-scrollbar-thumb {
+        background-color: #DDD;
+        border-radius: 5px;
+    }
+    /*滚动条按钮*/
+    .common_mobile_show_content::-webkit-scrollbar-button {
+        height: 0;
+        width: 0;
+    }
+
+    /*定义滚动条的轨道，内阴影及圆角*/
+    .common_mobile_show_content::-webkit-scrollbar-track {
+        background-color: #EEE;
+        border-radius: 5px;
+    }
+}
+
+.mobile_show_cont {
+    position: relative;
+    width: 375px;
+    height: 772px;
+    margin: 0 auto;
+}
+
+.mobile_show_cont::before {
+    display: block;
+    position: absolute;
+    top: 94px;
+    left: 26px;
+    content: "";
+    width: 326px;
+    height: 581px;
+    background: url(http://115.29.172.104/gimg/img/ba94bf9b9b819d2c7d1a54ef2b03780f) no-repeat;
+}

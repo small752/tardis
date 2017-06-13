@@ -1,0 +1,63 @@
+:global {
+    .swiper-container {
+        height: 100%;
+    }
+}
+
+.instance_h5_page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.instance_h5_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.h5_page_item {
+    width: 100%;
+    height: 100vh;
+}
+
+.music_switch_cont_run {
+    height: 30px;
+    width: 30px;
+    background: red;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    border-radius: .6rem;
+    background-position: 50%;
+    background-size: cover!important;
+    z-index: 1;
+    background: url(http://115.29.172.104/gimg/img/b6228540943873574de2b93ab6a2ad72!s300) no-repeat center 0;
+    -webkit-animation: rotateStart 5s linear infinite;
+    animation: rotateStart 5s linear infinite;
+}
+
+.music_switch_cont_stop {
+    height: 30px;
+    width: 30px;
+    background: red;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-position: 50%;
+    background-size: cover!important;
+    z-index: 1;
+    background: url(http://115.29.172.104/gimg/img/b6228540943873574de2b93ab6a2ad72!s300) no-repeat center 0;
+    -webkit-animation: rotateStart 5s linear infinite;
+    animation: rotateStart 5s linear infinite;
+    border-radius: 1rem;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes rotateStart {
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
